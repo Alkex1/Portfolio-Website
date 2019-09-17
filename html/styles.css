@@ -1,0 +1,17 @@
+h1 {
+    background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+    /* background: radial-gradient(ellipse at center, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);; */
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+nav {
+    display: fixed;
+    background:white;
+    border: 1px ridge black;
+    padding: 5px;
+}
+html {
+      background: whitesmoke;
+}
