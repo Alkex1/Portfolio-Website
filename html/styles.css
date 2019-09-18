@@ -2,16 +2,123 @@ h1 {
     background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
     /* background: radial-gradient(ellipse at center, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);; */
     text-align: center;
-    color: white;
-    padding: 50px;
+    color: darkblue;
+    padding: 25px;
+    font-family: 'Montserrat', sans-serif, italic;
 }
+
+h2 {
+    text-align: center;
+}
+
+html {
+      background: whitesmoke;
+      width: 100%;
+}
+div p {
+    text-align: center;
+    margin: 20px;
+}
+
+.about_div {
+    align-items: center;
+    margin: 0 25% 0 25%;
+    height: 100%;
+}
+
+/* .img_eg {
+    background-color: blue;
+} */
+.i1 {
+    /* height: 200px;
+    width: 200px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.container {
+    height: 100%-20%;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 80%;
+    box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.75);
+    background-color: whitesmoke;
+    opacity: 0.8;
+    
+    color: black;
+}
+body {
+    height: 100%;
+    
+}
+html {
+    height: 100%;
+    background-image: url("/pictures/geometric-1732847_1920.jpg");
+    background-color: lightslategrey;
+}
+
+/* Nav menu styling */
 
 nav {
     display: fixed;
     background:white;
-    border: 1px ridge black;
     padding: 5px;
+    position: absolute;
 }
-html {
-      background: whitesmoke;
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif; 
+    padding: 0 0 0 50px;
+    width: 20%;
+    z-index: 3;
+
+}
+.collapsible-menu {
+    background-color: rgba(134,174,204,1);
+    padding: 5px 30px;
+    border-bottom: 3px solid rgb(1, 33, 70);
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+.collapsible-menu a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.collapsible-menu label {
+    font-family: 'Montserrat', cursive;
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(/pictures/menu.png) no-repeat left center;
+    height: 16px;
+    background-size: contain;
+    padding: 10px 0 10px 50px;
+}
+
+input#menu {
+    display: none;
+    position: absolute;
+}
+
+input:checked +label {
+    background-image: url(/pictures/menu.png);
+}
+
+/* Toggle Effect */
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+}
+.credit-size {
+    font-size:5px;
 }
