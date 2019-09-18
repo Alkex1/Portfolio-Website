@@ -3,20 +3,44 @@
     <head>
         <link rel="stylesheet" href="normalize.css" />
         <link rel="stylesheet" href="styles.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav>
-            <a href="index.html">Home</a>
-            <a>About me</a>
-            <a>Blog</a>
-            <a>Contact me</a>
-        </nav>
-
+        <div class="collapsible-menu">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">Menu</label>
+            <nav class="menu-content">
+                <ul>
+                    <li><a href="index.html" target=_blank>Home</a></li>
+                    <li><a href="about_me.html">About me</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a href="contact.html" target=_blank>Contact me</a></li>
+                </ul>
+            </nav>
+         </div>
         <h1>About Me</h1>
-        <!-- <p>Favourite Colour?</p>
-        <p>Blue</p> -->
-        <p>Hey my name is Alex Kentwell, I'm currently studying at Coder Academy in order to become a senior developer.</p>
+        
+        <div class="about_div container">
 
+            <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aut inventore ipsa ullam culpa amet, similique nobis ipsam laudantium quibusdam laboriosam possimus quaerat reprehenderit velit itaque tempora quasi dolor. Similique.</p>
+            </div>
+
+        <div>
+            <img src="/pictures/photo-1535005410886-12b3caf12112.jfif" class="i1"/>
+        </div>
+        <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique accusamus consectetur eveniet pariatur aliquam mollitia sint natus temporibus, earum dicta cum placeat, recusandae perferendis voluptates quod ullam. Rerum, suscipit fugit.</p>
+        </div>
+        </div>
 
     </body>
+
+    <footer>
+            <div class="credit-size">Menu Icon made by <a href="https://www.flaticon.com/authors/cole-bemis" title="Cole Bemis">Cole Bemis</a> from <a href="https://www.flaticon.com/"  title="Flaticon">www.flaticon.com</a></div>
+
+    </footer>
 </html>
