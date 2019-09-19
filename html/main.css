@@ -1,0 +1,309 @@
+h1 {
+  background: linear-gradient(to bottom, #d4e4ef 0%, #86aecc 100%);
+  /* background: radial-gradient(ellipse at center, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);; */
+  text-align: center;
+  color: darkblue;
+  padding: 25px;
+  font-family: "Montserrat", sans-serif, italic;
+}
+
+h2 {
+  text-align: center;
+}
+
+div p {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Images section */
+.i1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.i2 {
+  width: 100%;
+  text-align: center;
+}
+
+div .blog-img {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5% 5%;
+}
+
+.blog-img img {
+  width: 50%;
+  max-width: 300px;
+  border-radius: 90px;
+}
+
+div .blog-img2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5% 5%;
+}
+
+.blog-img2 img {
+  width: 50%;
+  max-width: 300px;
+  border-radius: 90px;
+}
+
+.my-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 5%;
+}
+
+.my-pic img {
+  height: 250px;
+  width: 250px;
+  max-width: 300px;
+  border-radius: 200px;
+}
+
+.container {
+  min-height: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 80%;
+  box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.75);
+  background-color: whitesmoke;
+  opacity: 0.9;
+  color: black;
+}
+
+body {
+  height: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background-image: url("/pictures/geometric-1732847_1920.jpg");
+  background-color: lightslategrey;
+}
+
+/* Nav menu styling */
+nav {
+  display: fixed;
+  background: white;
+  padding: 5px;
+  position: absolute;
+}
+
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 15px;
+  /* width: 20%; */
+  z-index: 3;
+}
+
+.collapsible-menu {
+  background-color: #86aecc;
+  padding: 10px 30px;
+  border-bottom: 3px solid #012146;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.collapsible-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.collapsible-menu label {
+  font-family: "Montserrat", cursive;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(/pictures/menu.png) no-repeat left center;
+  height: 30px;
+  background-size: contain;
+  padding: 10px 0 10px 35px;
+}
+
+input#menu {
+  display: none;
+  position: absolute;
+}
+
+input:checked + label {
+  background-image: url(/pictures/menu.png);
+}
+
+/* Toggle Effect */
+input:checked ~ .menu-content {
+  max-height: 100%;
+}
+
+.credit-size {
+  font-size: 5px;
+}
+
+/* Carousel styling */
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #a8a6a6;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Contact form styling */
+input[type=text], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+}
+
+#question {
+  height: 200px;
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.formcontainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

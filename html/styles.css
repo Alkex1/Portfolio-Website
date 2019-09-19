@@ -29,14 +29,15 @@ div p {
     text-align: center;
 }
 
-.my-pic {
+div .my-pic {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     margin: 5% 5%;
 }
 .my-pic img {
-  height: 200px;
+  width: 50%;
+  max-width: 300px;
   border-radius: 90px;
 
 }
@@ -45,15 +46,14 @@ div p {
 div .blog-img {
   display:flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  /* margin: 5% 5%; */
+  margin: 5% 5%;
 }
 
 .blog-img img {
-  height:200px;
-  /* width: 200px; */
-  
+  width: 50%;
+  max-width: 300px;  
 }
 
 
