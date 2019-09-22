@@ -1,12 +1,20 @@
 /* Carousel styling */
+// .slideshow-pos {
+//   display:flex;
+//   flex-direction: column;
+//   justify-content: flex-end;
+// }
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 60%;
+  max-width: 50%;
   position: relative;
   margin: auto;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
 }
 
 /* Hide the images by default */
@@ -43,7 +51,7 @@
 
 /* Caption text */
 .text {
-  color: rgb(168, 166, 166);
+  color: rgb(54, 53, 53);
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
