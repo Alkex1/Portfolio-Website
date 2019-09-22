@@ -1,28 +1,30 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+<div id="slider" class="slider">
+  <div class="wrapper">
+    <div id="items" class="items">
+      <div class="slide">Note taking terminal app</div>
+      <div class="slide">Bibimbap recipe website</div>
+      <div class="slide">Slide 3</div>
+      <!-- <div class="slide">Slide 4</div>
+      <div class="slide">Slide 5</div> -->
+    </div>
+  </div>
+  <a id="prev" class="control prev"></a>
+  <a id="next" class="control next"></a>
+</div>
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+    <script  src="js/index.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
