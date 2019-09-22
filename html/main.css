@@ -28,6 +28,16 @@ h2 {
   font-size: 35px;
 }
 
+.wrk-edu {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.wrk-edu h2 {
+  text-align: left;
+}
+
 /* Images section */
 .i1 {
   display: block;
@@ -87,7 +97,7 @@ div .blog-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5% 5%;
+  margin-top: 5%;
 }
 
 .my-pic img {
@@ -105,6 +115,19 @@ div .blog-img {
     font-size: 10px;
   }
 }
+a[href$=".pdf"] {
+  background-image: url("/pictures/iconfinder_file-pdf_285666.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 10px;
+}
+
 .container {
   margin: 0 auto;
   border: 1px solid black;
