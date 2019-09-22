@@ -1,5 +1,4 @@
 h1 {
-    // background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
     background: radial-gradient(ellipse at center, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
     text-align: center;
     color: darkblue;
@@ -14,4 +13,16 @@ h2 {
 div p {
     text-align: center;
     margin: 20px;
+}
+
+.abt-me p {
+    font-size: 18px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif, italic;
+}
+.welcome {
+    font-family: 'Fugaz One', cursive;
+    font-size: 35px;
 }

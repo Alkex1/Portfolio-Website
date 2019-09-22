@@ -15,6 +15,19 @@ div p {
   margin: 20px;
 }
 
+.abt-me p {
+  font-size: 18px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif, italic;
+}
+
+.welcome {
+  font-family: "Fugaz One", cursive;
+  font-size: 35px;
+}
+
 /* Images section */
 .i1 {
   display: block;
@@ -28,11 +41,28 @@ div p {
   text-align: center;
 }
 
-div .blog-img {
+div .hclass {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
+  background-color: silver;
+}
+
+.hclass img {
+  width: 50%;
+  max-width: 300px;
+  border-radius: 20px;
+  margin: 5% 5%;
+}
+
+.hclass:hover {
+  border: 3px solid black;
+  font-size: larger;
+}
+
+div .blog-img {
+  flex-direction: row-reverse;
+  background-color: white;
 }
 
 .blog-img img {
@@ -42,22 +72,8 @@ div .blog-img {
   margin: 5% 5%;
 }
 
-div .blog-img2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: darkgrey;
-}
-
-.blog-img2 img {
-  width: 50%;
-  max-width: 300px;
-  border-radius: 20px;
-  margin: 5% 5%;
-}
-
 @media screen and (max-width: 599px) {
-  div .blog-img2 {
+  div .hclass {
     display: block;
     text-align: center;
   }
@@ -75,9 +91,8 @@ div .blog-img2 {
 }
 
 .my-pic img {
-  border-radius: 25vw;
-  width: 25vw;
-  max-width: 300px;
+  border-radius: 50vw;
+  width: 20vw;
 }
 
 @media screen and (max-width: 599px) {
@@ -91,7 +106,6 @@ div .blog-img2 {
   }
 }
 .container {
-  min-height: 100%;
   margin: 0 auto;
   border: 1px solid black;
   width: 80%;
@@ -103,9 +117,7 @@ div .blog-img2 {
 
 .div-styling {
   clear: both;
-  position: fixed;
   max-height: 100vh;
-  overflow: auto;
   height: 100%;
 }
 
@@ -114,6 +126,9 @@ body {
   height: 100%;
   background-image: url("/pictures/geometric-1732847_1920.jpg");
   background-color: lightslategrey;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 html {
@@ -123,10 +138,10 @@ html {
 
 /* Nav menu styling */
 nav {
-  display: fixed;
   background: white;
   padding: 5px;
-  position: absolute;
+  position: fixed;
+  z-index: 99;
 }
 
 .menu-content {
@@ -185,29 +200,36 @@ input:checked ~ .menu-content {
   font-size: 5px;
 }
 
-.menutest {
+.menutwo {
   display: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
   .collapsible-menu {
     display: none;
   }
 
-  .menutest {
+  .menutwo {
     position: relative;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
-  #mtest2 {
+  #menubutton {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: #86aecc;
-    padding: 10px 30px;
+    background-color: #4682b49e;
     border-bottom: 3px solid #012146;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    font-family: "Montserrat", cursive;
+  }
+
+  .button {
+    background-color: rgba(11, 10, 56, 0.82);
+    border: none;
+    color: silver;
+    padding: 10px 50px;
   }
 }
 /* Carousel styling */
@@ -316,6 +338,7 @@ input:checked ~ .menu-content {
 }
 /* Contact form styling */
 input[type=text], select, textarea {
+  display: block;
   width: 100%;
   /* Full width */
   padding: 12px;
@@ -340,7 +363,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: darkblue;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -358,7 +381,58 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  width: fit-content;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flip-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

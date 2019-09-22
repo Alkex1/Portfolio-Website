@@ -1,10 +1,10 @@
 /* Nav menu styling */
 
 nav {
-    display: fixed;
     background:white;
     padding: 5px;
-    position: absolute;
+    position: fixed;
+    z-index: 99;
 }
 .menu-content {
     height: 0;
@@ -61,36 +61,37 @@ input:checked ~ .menu-content {
     font-size:5px;
 }
 
-.menutest {
+
+// Menu for wider screens
+
+.menutwo {
     display: none;
 }
 
-// #mtest2 {
-//     display: none;
-//     background-color: red;
-// }
 
-
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
     .collapsible-menu {
         display:none;
     }
-    .menutest {
+    .menutwo {
         position: relative;
         display: flex;
-        // flex-direction: row;
-        // justify-content: space-around;
-        // align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
     }
-    #mtest2 {
+    #menubutton {
         display: flex;
         justify-content: space-around;
         width: 100%;
-        background-color: rgba(134,174,204,1);
-        padding: 10px 30px;
+        background-color: #4682b49e;
+        // padding: 5px 30px;
         border-bottom: 3px solid rgb(1, 33, 70);
         box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+        font-family: 'Montserrat', cursive;
+    }
+    .button {
+        background-color: rgba(11, 10, 56, 0.82);
+        border: none;
+        color: silver;
+        padding: 10px 50px;
     }
 }
