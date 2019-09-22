@@ -108,6 +108,7 @@ div .blog-img {
 .my-pic img {
   border-radius: 50vw;
   width: 20vw;
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 599px) {
